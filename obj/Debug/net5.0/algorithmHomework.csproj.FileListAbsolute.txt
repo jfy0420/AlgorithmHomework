@@ -1,0 +1,15 @@
+/Users/qxy1464/github/algorithmHomework/bin/Debug/net5.0/algorithmHomework.deps.json
+/Users/qxy1464/github/algorithmHomework/bin/Debug/net5.0/algorithmHomework.runtimeconfig.json
+/Users/qxy1464/github/algorithmHomework/bin/Debug/net5.0/algorithmHomework.runtimeconfig.dev.json
+/Users/qxy1464/github/algorithmHomework/bin/Debug/net5.0/algorithmHomework.dll
+/Users/qxy1464/github/algorithmHomework/bin/Debug/net5.0/ref/algorithmHomework.dll
+/Users/qxy1464/github/algorithmHomework/bin/Debug/net5.0/algorithmHomework.pdb
+/Users/qxy1464/github/algorithmHomework/obj/Debug/net5.0/algorithmHomework.csproj.AssemblyReference.cache
+/Users/qxy1464/github/algorithmHomework/obj/Debug/net5.0/algorithmHomework.GeneratedMSBuildEditorConfig.editorconfig
+/Users/qxy1464/github/algorithmHomework/obj/Debug/net5.0/algorithmHomework.AssemblyInfoInputs.cache
+/Users/qxy1464/github/algorithmHomework/obj/Debug/net5.0/algorithmHomework.AssemblyInfo.cs
+/Users/qxy1464/github/algorithmHomework/obj/Debug/net5.0/algorithmHomework.csproj.CoreCompileInputs.cache
+/Users/qxy1464/github/algorithmHomework/obj/Debug/net5.0/algorithmHomework.dll
+/Users/qxy1464/github/algorithmHomework/obj/Debug/net5.0/ref/algorithmHomework.dll
+/Users/qxy1464/github/algorithmHomework/obj/Debug/net5.0/algorithmHomework.pdb
+/Users/qxy1464/github/algorithmHomework/obj/Debug/net5.0/algorithmHomework.genruntimeconfig.cache
