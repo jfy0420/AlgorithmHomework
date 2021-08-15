@@ -25,19 +25,19 @@ namespace algorithmHomework{
             return true;
         }
 
-        //方法二：使用hash表，将26个字母作为hash key，S的字母+1，t的字母-1，如果数字出现负数，则return false
+        //方法二：使用hash表，将26个字母作为hash key，S的字母+1，t的字母-1，如果数字出现负数，则return false(C#的hashset不可以做这个)
         public bool IsAnagram2(string s, string t) {
             if(s.Length!=t.Length)
                 return false;
         
-            char[] hsS=new char[26]();
+            int[] alphbetList=new int[26];
             for(int i=0;i<s.Length;i++)
             {
-                hsS[s[i]-'a']++;
+                alphbetList[s[i]-'a']++;
             }
             for(int i=0;i<t.Length;i++)
             {
-                if(--hsS[t[i]-'a']<0)
+                if(--alphbetList[t[i]-'a']<0)
                     return false;
             }
             return true;
