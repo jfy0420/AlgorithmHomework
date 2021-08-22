@@ -18,10 +18,10 @@ namespace algorithmHomework{
 
             while(stack.Count>0)
             {
-                var root=stack.Pop();
-                result.Add(root.val);
-                for(int i=root.children.Count-1;i>=0;i++){
-                    stack.Push(root.children[i]);
+                var rootNode=stack.Pop();
+                result.Add(rootNode.val);
+                for(int i=rootNode.children.Count-1;i>=0;i++){
+                    stack.Push(rootNode.children[i]);
                 }
             }
             return result;
