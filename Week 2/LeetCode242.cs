@@ -1,10 +1,11 @@
 using System.Collections.Generic;
+using System;
 
 namespace algorithmHomework{
     /*
     有效的字母异位词：给定两个字符串 s 和 t ，编写一个函数来判断 t 是否是 s 的字母异位词。
     */
-    public static class LeetCode242{
+    public class LeetCode242{
         //方法一：字母排序: c#没有实现Array.equal()的方法:这个效率低
         public bool IsAnagram(string s, string t) {
             if(s.Length!=t.Length)
