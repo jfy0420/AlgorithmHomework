@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 
 namespace algorithmHomework{
     /*
@@ -7,11 +8,11 @@ namespace algorithmHomework{
     public class LeetCode46{
          public IList<IList<int>> Permute(int[] nums) {
              IList<IList<int>> ans = new List<IList<int>>();
-            BackTrack(nums.ToList(), new List<int>(), ans);
+            PermuteHelper(nums.ToList(), new List<int>(), ans);
             return ans;
         }
 
-        private void BackTrack(List<int> nums, List<int> choose, IList<IList<int>> result){
+        public void PermuteHelper(List<int> nums, List<int> choose, IList<IList<int>> result){
             if(nums.Count == 0){
                 result.Add(choose.ToArray());
             }

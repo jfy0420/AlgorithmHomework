@@ -11,6 +11,7 @@ namespace algorithmHomework{
             InorderTraversal(root.left);
             result.Add(root.val);
             InorderTraversal(root.right);
+            return result;
         }
 
         //Approach 2: iterative

@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using System.Math;
+using System;
 
 namespace algorithmHomework{
     /*
@@ -12,7 +12,7 @@ namespace algorithmHomework{
             if(prices.Length<0) return result;
             for(int i=1;i<prices.Length;i++)
             {
-                result+=Max(prices[i]-prices[i-1],0);
+                result+=Math.Max(prices[i]-prices[i-1],0);
             }
             return result;
         }
