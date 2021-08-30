@@ -28,7 +28,7 @@ namespace algorithmHomework{
         {
             int c=grid[0].Length;
             int r=grid.Length;
-            if(i>=r||j>=c||c<0||r<0||grid[i][j]!='1')
+            if(i>=r||j>=c||i<0||j<0||grid[i][j]!='1')
                 return;
             
             grid[i][j]='2';
