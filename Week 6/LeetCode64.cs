@@ -54,8 +54,8 @@ namespace algorithmHomework{
             int l = 0;
             int r = rows*columns-1;
             int curRow, curCol;
-            while (l <=r) {
-                int m = (l + r - 1 )>> 1;
+            while (l <= r) {
+                int m = l + ((r - l) >> 1);
                 curRow= m/columns;
                 curCol=m-curRow*columns;
                 if (target < matrix[curRow][curCol]) {

@@ -19,6 +19,7 @@ namespace algorithmHomework{
             return dp[amount]== max? -1:dp[amount];
         }
 
+        //这个速度快些
         public int CoinChange2(int[] coins, int amount) {
             int max=int.MaxValue;
             int[] dp=new int[amount+1];

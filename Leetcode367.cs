@@ -42,5 +42,15 @@ namespace algorithmHomework{
             return (x * x == num);
 
         }
+
+        public bool IsPerfectSquare3(int num) {
+            int num1 = 1;
+            while(num > 0) 
+            {
+                num -= num1;
+                num1 += 2;
+            }
+            return num == 0;
+    }
     }
 }

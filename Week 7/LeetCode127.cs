@@ -137,5 +137,49 @@ namespace algorithmHomework{
             }
             return false;
         }
+
+        //双向搜索: time exceeds limit
+         public int LadderLength3(string beginWord, string endWord, IList<string> wordList) {
+            HashSet<string> wordSet=new HashSet<string>(wordList);
+            if (wordSet.Count == 0 || !wordSet.Contains(endWord)) {
+                return 0;
+            }
+            HashSet<string> beginSet=new HashSet<string>();
+            HashSet<string> endSet=new HashSet<string>();
+
+            int len=1;
+            int strLen=beginWord.Length;
+            HashSet<string> visited=new HashSet<string>();
+
+            beginSet.Add(beginWord);
+            endSet.Add(endWord);
+            while(beginSet.Count>0 && endSet.Count>0){
+                if(beginSet.Count>endSet.Count){
+                    HashSet<string> set=beginSet;
+                    beginSet=endSet;
+                    endSet=set;
+                }
+
+                HashSet<string> temp=new HashSet<string>();
+                foreach(string word in beginSet){
+                    for(int i=0;i<word.Length;i++){//遍历所有字符
+                        for(char c='a';c<='z';c++){
+                            string newWord=word.Substring(0,i)+c+word.Substring(i+1);
+                            if(endSet.Contains(newWord)){
+                                return len+1;
+                                
+                            }
+                            if(!visited.Contains(newWord)&&wordList.Contains(newWord)){
+                                temp.Add(newWord);
+                                visited.Add(newWord);
+                            }
+                        }
+                    }
+                }
+                beginSet=temp;
+                len++;
+            }
+            return 0;
+         }
     }
 }
