@@ -10,14 +10,14 @@ namespace algorithmHomework{
         public IList<string> FindWords(char[][] board, string[] words) {
         var res = new List<string>();
         // construct the Trie
-        var root = new TrieNode();
+        var root = new TrieNode1();
         foreach (var word in words) {
             var cur = root;
             foreach (var c in word) {
                 if (cur.children.ContainsKey(c)) {
                     cur = cur.children[c];
                 } else {
-                    var newnode = new TrieNode();
+                    var newnode = new TrieNode1();
                     cur.children[c] = newnode;
                     cur = newnode;
                 }
@@ -37,7 +37,7 @@ namespace algorithmHomework{
         return res;
     }
     
-    public void DFS(char[][] board, int i, int j, TrieNode cur, List<string> res) {
+    public void DFS(char[][] board, int i, int j, TrieNode1 cur, List<string> res) {
         if (cur.word != null) {
             res.Add(cur.word);
             cur.word = null; // once visited, set as null, otherwise, it would go here again in the trie
@@ -57,11 +57,11 @@ namespace algorithmHomework{
     }
 }
 
-public class TrieNode {
-    public Dictionary<char, TrieNode> children = new Dictionary<char, TrieNode>();
-    public string word = null;
-    
-    public TrieNode() {}
-}
+    public class TrieNode1 {
+        public Dictionary<char, TrieNode1> children = new Dictionary<char, TrieNode1>();
+        public string word = null;
+        
+        public TrieNode1() {}
+    }
     
 }
